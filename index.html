@@ -13,9 +13,8 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,22 +29,35 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
       <section id="Landing">
-        <h1>Welcome To Houzez</h1>
-        <p>Houzez is an innovative real estate WordPress theme that helps to ensure your website’s success in this super-competitive market.</p>
+        <div class="landing-text">
+          <h1>Welcome To Houzez</h1>
+        <p>Houzez is an innovative real estate WordPress theme<br> that helps to ensure your website’s success in this<br> super-competitive market.</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <button>All Status</button>
+            </div>
+            <div class="col">
+              <button>For Rent</button>
+            </div>
+            <div class="col">
+              <button>For Sale</button>
+            </div>
+          </div>
+      </div>
       </section>
+      
       <section id="Search">
-        <form>
+        <form class="shadow">
             <div class="form-items">
-                <label for="Looking for?">Choose type:</label>
-            <select id="type" name="type">
+                <label for="Looking for?">LOOKING FOR</label>
+            <select id="type" name="type" aria-placeholder="Property Type">
                 <option value="Commercial">Commercial</option>
                 <option value="saab">Saab</option>
                 <option value="fiat">Fiat</option>
@@ -53,7 +65,7 @@
             </select>
             </div>
             <div class="form-items">
-                <label for="Location">Choose location:</label>
+                <label for="Location">LOCATION</label>
             <select id="location" name="location">
                 <option value="volvo">All Cities</option>
                 <option value="saab">Saab</option>
@@ -62,7 +74,7 @@
             </select>
             </div>
             <div class="form-items">
-                <label for="Property size?">Property size:</label>
+                <label for="Property size?">PROPERT SIZE</label>
             <select id="size" name="size">
                 <option value="volvo">Bedrooms</option>
                 <option value="saab">Saab</option>
@@ -71,7 +83,7 @@
             </select>
             </div>
            <div class="form-items">
-            <label for="Your budget?">Price range:</label>
+            <label for="Your budget?">YOUR BUDGET</label>
             <select id="price" name="price">
                 <option value="volvo">Max-Price</option>
                 <option value="saab">Saab</option>
@@ -82,7 +94,14 @@
             <button type="button" class="search">Search</button>
         </form>
     </section>
-      <section id="Properties">
+
+    <section id="Listing">
+      
+    </section>
+    <!-- <section class="tester">
+
+    </section> -->
+      <!-- <section id="Properties">
         <div class="container">
             <div class="row align-items-start">
               <div class="col">
@@ -117,7 +136,7 @@
                   <img src="./images/studio-apartment1.jpg" alt="">
                 </div>
               </div>
-            </section>
+            </section> -->
      
 
       <footer class="bg-dark">
